@@ -1,19 +1,14 @@
 {
   "cleanUrls": true,
   "redirects": [
+    { "source": "/", "destination": "/join", "permanent": false },
     {
-      "source": "/((?!join|api/|assets/|administracao|niverdamel|site\\.css|site\\.js|favicon\\.svg).*)",
+      "source": "/(index|expressoes|como-funciona|faq|privacidade|termos|conta|configuracoes|conversar)(\\.html)?",
       "destination": "/join",
       "permanent": false
     }
   ],
-  "rewrites": [
-    { "source": "/administracao/ticord/inscrições-join", "destination": "/administracao/ticord/inscricoes-join" },
-    { "source": "/administracao/ticord/inscrições-join.html", "destination": "/administracao/ticord/inscricoes-join" },
-    { "source": "/administracao/ticord/inscri%C3%A7%C3%B5es-join", "destination": "/administracao/ticord/inscricoes-join" },
-    { "source": "/administracao/ticord/inscri%C3%A7%C3%B5es-join.html", "destination": "/administracao/ticord/inscricoes-join" }
-  ],
   "headers": [
-    { "source": "/administracao/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+    { "source": "/admin", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
   ]
 }
