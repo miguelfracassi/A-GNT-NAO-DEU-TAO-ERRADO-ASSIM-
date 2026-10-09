@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/((?!join|api/|assets/|administracao|niverdamel|site\\.css|site\\.js|favicon\\.svg).*)",
+      "destination": "/join",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    { "source": "/administracao/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+  ]
+}
