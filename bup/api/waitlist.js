@@ -1,8 +1,9 @@
 {
   "cleanUrls": true,
   "redirects": [
+    { "source": "/", "destination": "/join", "permanent": false },
     {
-      "source": "/((?!join|api/|assets/|admin|niverdamel|site\\.css|site\\.js|favicon\\.svg).*)",
+      "source": "/(index|expressoes|como-funciona|faq|privacidade|termos|conta|configuracoes|conversar)(\\.html)?",
       "destination": "/join",
       "permanent": false
     }
